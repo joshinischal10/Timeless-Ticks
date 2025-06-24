@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--html project-->
+<html lang="en">
+    <head>
+        <!--Title Tag-->
+        <title>TimeLess Ticks - Blogs</title>
+
+        <!--Meta Tags-->
+        <meta name="Author" content="Stuti Adhikari">
+        <meta name="AuthorID" content="NP01CP4A240169">
+        <meta name="Description" content="Blog page of the website TimeLess Ticks">
+        <meta name="Keywords" content="TimeLess Ticks, Time, Watch, HTML, CSS, javascript">
+
+        <!--The icon for website present next to title-->
+        <linK rel="icon" type="image" href="../Images/Title logo.png">
+
+        <link rel="stylesheet" href="../CSS/style.css">
+
+        <script src="../JavaScript/myscript.js"></script>
+        <!--internal css-->
+        <style>
+             /*styling to all the element*/
+             *{
+                box-sizing: border-box;
+                text-decoration: none;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            /*Style for the header banner and the text inside it*/
+            .header{
+                margin-bottom: 20px;
+                padding:30px;
+                font-size:40px;
+                text-align: right;
+                color:#391e10;
+                background-image: url('../Images/Blogs/Main Banner.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            /*Style for the search input place inside header banner*/
+            #searchInput{
+                font-size:16px;
+                border:2px solid  #faebd7;
+                border-radius: 7px;
+                padding: 10px;
+                width:300px;
+            }
+
+            /*Style for the search button inside header banner*/
+            #searchButton{
+                font-size:16px;
+                color:#391e10;
+                padding:10px;
+                background-color: #faebd7;
+                border-radius: 7px;
+                transition: background-color 0.2s;
+            }
+
+            /*Style for the search button when mouse hovers on it*/
+            #searchButton:hover{
+                background-color: #ffe4c4;
+            }
+
+            /*Style for the blog boxes*/
+            .card{
+                padding:20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                background-color: #faebd7;
+            }
+
+            .card a{
+                color: maroon;
+            }
+
+
+            .card a:hover{
+                color:crimson;
+            }
+
+            /*Style for the two different size rows and two left and two right columns*/
+            .row1{
+                display: flex;
+            }
+            .row2{
+                display:flex;
+            }
+            .leftcolumn1{
+                flex: 50%;
+            }
+            .rightcolumn1{
+                flex:50%;
+                padding-left:20px;
+            }
+            .leftcolumn2{
+                flex:75%;
+            }
+            .rightcolumn2{
+                flex:25%;
+                padding-left: 20px;
+            }
+
+            /*Style for the subscribe to newsletter form*/
+            .form{
+                padding: 20px;
+                border:20px solid #faebd7;
+                border-radius: 10px;
+                box-shadow: #faebd7;
+            }
+            .form input[type="text"], input[type="email"]{
+                padding: 10px;
+                margin: 10px;
+                border: 5px solid #ffe4c4;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            /*Style for the subscribe button*/
+            .form input[type="submit"]{
+                display:block;
+                font-size: 16px;
+                padding:10px 20px;
+                margin:20px auto;
+                background-color: #faebd7;
+                border: 1px solid #ffdfba;
+                border-radius: 5px;
+                cursor:pointer;
+                transition: background-color 0.3s;
+            }
+            .form input[type="submit"]:hover{
+                background-color: #ffe4c4;
+            }
+
+            /*Stle for the our picks section of blog*/
+            .link-container{
+                display:flex;
+                gap:10px;
+                flex-direction: column;
+                margin-bottom: 100px;
+                margin-top: 25px;
+            }
+            .custom-link{
+                color:#391e10;
+                font-size:20px;
+                padding: 10px 15px;
+                border: 2px solid #391e10;
+                border-radius: 5px;
+                display: inline-block;
+            }
+
+        </style>
+    </head>
+<body>
+    <!--Starting of Header Tag-->
+    <header>
+        <!--Starting of Navigation Tag/ navigation bar-->
+         <nav>
+          <!--Website Logo-->
+          <div class="logo">
+            <a href="../Home.html"><img src="../Images/Nav Bar/Timeless Ticks.png" alt="TimeLess Ticks Logo" height="100%" ></a> 
+            </div>
+            
+            <!--Navigation Links/start of unordered list-->
+            <div class="Nav_Links">
+            <ul>
+              <!--Home page link-->
+              <li><a href="../Home.html">Home</a></li>
+
+              <!--Blog page link-->
+              <li><a class="active" href="./Blogs.html">Blogs</a></li>
+
+              <!--Products page link-->
+              <li><a href="./Products.html">Products</a></li>
+
+              <!--Research page link-->
+              <li><a href="./Research.html">Research</a></li>
+
+              <!--About Us page link-->
+              <li><a href="./About_Us.html">About Us</a></li>
+
+              <!--Contact link-->
+              <li><a href="./Contact.html">Contact</a></li>
+
+              <!--Search Bar-->
+              <li><input class="search" type="search" placeholder=" Search" onsearch="Search()" || ondblclick="Search()"></li> <!--calling function Search()-->
+
+              <!--Cart page icon/link-->
+              <li><a href="./Cart.html"><img src="../Images/Nav Bar/cart.png" width="20px" height="20px"></a></li>
+
+            </ul>
+            </div>
+            <!--End of unordered list-->
+          </nav>
+          <!--End of Navigation bar-->
+      </header>
+      <!--End of Header-->
+
+<!--main part-->
+    <!--the main blog banner-->
+    <div class="header">
+        <h1>Timeless Ticks Blogs</h1>
+        <p style="font-size: 20px; color: #391e10;"> Read Everything You Need To Know About Watches And Tech</p>
+        <input type="text" id="searchInput" placeholder="Search blogs...">
+        <button id="searchButton" onclick="alert('Searching...') + alert('Search not found.')"> Search </button>
+    </div>
+
+    <!--featured blog section-->
+    <h2> <span style="color:#391e10; background-color: #ffe4c4; padding: 5px; border-radius: 5px;"> Featured Blog </span> </h2>
+    <!--featured blog-->
+    <div class="card">
+        <h1> Timeless Innovations</h1>
+                <br>
+                <a href="./Blogs/Blog1.html">
+                <h2>Learn how technology is reshaping the watch industry, <i>Jan 2025 </i> </h2>
+                <img src="../Images/Blogs/Blogs Banner (1).png" alt="watch banner" style="width:100%; height: 400px; padding:20px;"> 
+                </a>  
+    </div>
+
+    <!--all blogs section-->
+    <h2> <span style="color:#391e10; background-color: #ffe4c4; padding: 5px; border-radius: 5px;"> All Blogs </span> </h2>
+    
+    <!--first row with 2 columns equal size-->
+    <div class="row1">
+        <div class="leftcolumn1">
+            <div class="card">
+                <h1>Tech Meets People</h1>
+                <br>
+                <a href="./Blogs/Blog2.html">
+                <h2>How is technology driving consumer trends and watch sales, <i>Jan 2025 </i> </h2>
+                <img src="../Images/Blogs/Blog2.png" alt="tech banner" style="width:100%; height: 300px; padding:20px;"> 
+                </a>  
+            </div>
+        </div>
+
+        <div class="rightcolumn1">
+            <div class="card">
+                <h1>A Watch Reimagined</h1>
+                <br>
+                <a href="./Blogs/Blog3.html">
+                <h2> From analog to digital, here's a deeper view on the watch aesthetic througthout the years, <i>Jan 2025 </i> </h2>
+                <img src="../Images/Blogs/Blog3.png" alt=" traditional watch banner" style="width:100%; height: 300px; padding:20px;"> 
+                </a>  
+            </div>
+        </div>
+    </div>
+
+    <!--second row with 2 rows both with 75% and 25% columns-->
+    <div class="row2">
+        <div class="leftcolumn2">
+            <div class="card">
+                <h1>New at Timeless Ticks</h1>
+                <br>
+                <a href="./Blogs/Blog4.html">
+                <h2>Explore our newest arrivals and find your perfect purchase, <i>Jan 2025 </i> </h2>
+                <img src="../Images/Blogs/Blog4_display.png" alt="newest products banner" style="width:100%; height: 300px; padding:20px;"> 
+                </a>  
+            </div>  
+
+            <div class="card">
+                <h1> Timeless Innovations</h1>
+                <br>
+                <a href="./Blogs/Blog1.html">
+                <h2>Learn how technology is reshaping the watch industry, <i>Jan 2025 </i> </h2>
+                <img src="../Images/Blogs/Blogs Banner (1).png" alt="watch banner" style="width:100%; height: 300px; padding:20px;"> 
+                </a>  
+            </div>
+        </div>
+
+        <div class="rightcolumn2">
+            <div class="card">
+                <h2><span style="color:#391e10; background-color: floralwhite; padding: 5px; border-radius: 5px;"> Our Picks </span> </h2>
+                <br>
+                <div class="link-container">
+                    <a href="./Blogs/Blog1.html" class="custom-link"> Timeless Innovations</a> <br>
+                    <a href="./Blogs/Blog2.html" class="custom-link"> Tech Meets People</a> <br>
+                    <a href="./Blogs/Blog3.html" class="custom-link"> A Watch Reimagined</a> 
+                </div>
+            </div>
+
+            <div class="form">
+                <form name="SubscribeForm" onsubmit="return ValidateForm()"> 
+                    <h2 style="text-align: center; margin-bottom: 20px;"> Subscribe To Our Newsletter</h2>
+                    <p style="margin-bottom: 20px;"> Get The Latest Updates From Timeless Ticks!</p>
+                    <p>Name: <input type="text" name="YourName"> </p>
+                    <p>Email: <input type="email" name="YourEmail"> </p>
+                    <p> <input type="submit" value="Subscribe"> </p>
+                </form>
+
+                <script>
+                /*JavaScript implications*/
+                //Function to validate form
+                    function ValidateForm(){
+                        var name=document.forms["SubscribeForm"] ["YourName"].value.trim(); //storing value of "YourName" from the form in variable name
+                        var email=document.forms["SubscribeForm"] ["YourEmail"].value.trim(); //storing value of "YourEmail" from the form in variable email
+                        if (name== "" || email== ""){ //if condition to check if the name and email variables are empty
+                            alert("Empty fields found, please fill the form."); //Alert to be shown if name or email empty
+                            return false;
+                        }
+                        else{
+                            alert("Thank you for subscribing! :) "); //Alert to be shown if not empty
+                            return true;
+                        }
+                    }
+                    
+                    
+                </script>
+            </div>
+        </div>
+    </div>
+
+              <!--Footer-->
+              <footer>
+                <div class="Footer"> 
+                  <div class="Information_container">
+                      <h4>INFORMATION</h4>
+                          <a href="../HTML/About_Us.html"><h6>About Us</h6></a>
+                          <a href="../HTML/Contact.html"><h6>Contact Us</h6></a>
+                          <a href="../HTML/Blogs.html"><h6>Blogs</h6></a>
+                  </div>
+                  <div class="Service_container">
+                      <h4>OUR SERVICE</h4>
+                      <div>
+                          <a href="./Our_Services.html"><h6>Privacy Policy</h6></a>
+                          <a href="./Our_Services.html"><h6>Terms of Sale</h6></a>
+                          <a href="./Our_Services.html"><h6>Return & Exchange</h6></a>
+                          <a href="./Our_Services.html"><h6>F.A.Q</h6></a>
+                      </div>
+                  </div>
+                  <div class="newsletter_container">
+                      <h3><u>Newsletter</u></h3>
+                      <p>Subscribe to our newsletter to get the latest updates!!</p>
+                      <div class="images_social_links">
+                          <a href="https://www.instagram.com/timelesstick.id/"><img src="../Images/Footer/Instagram.png" alt="instagram icon"></a>
+                          <a href="https://www.threads.net/@timelesstick.id?xmt=AQGzvCBod5lV5Sri75lRfDULNTR92J1pGOKe6MNzWrDUjTY"><img src="../Images/Footer/Threads.png" alt="thread icon"></a>
+                      </div>
+                  </div>
+                   
+                  <div class="Payment_container">
+                      <h4>We accept online playment to:</h4>
+                      <div class="images_payment">
+                          <img src="../Images/Footer/IME Pay.png" alt="IME pay logo">
+                          <img src="../Images/Footer/eSewa.png" alt="eSewa logo">
+                          <img src="../Images/Footer/Khalti.png" alt="khalti logo">
+                      </div>
+                  </div>
+            </div>
+        <!-- copy right-->
+    <div>
+        <hr>
+        <p style="text-align: center;">&copy; 2024 TimeLess Ticks. Every Tick Tells a Story. All Rights Reserved</p>
+    </div>
+        </footer>
+            <!--End of Footer-->
+</body>
+</html>

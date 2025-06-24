@@ -1,0 +1,441 @@
+<!--Declaring HTML 5-->
+<!DOCTYPE html>
+<!--Starting of HTML Tag-->
+<html>
+  <!--Starting of Head Tag-->
+    <head>
+      <!--Title Tag-->
+        <title>TimeLess Ticks - Products</title>
+
+        <!--Meta Tags-->
+        <meta name="Author" content="Nischal Raj Joshi">
+        <meta name="AuthorID" content="NP01CP4A240168">
+        <meta name="Description" content="Home page of the website TimeLess Ticks">
+        <meta name="Keywords" content="TimeLess Ticks, Time, Watch, HTML, CSS, javascript">
+       <!--The icon for website present next to title-->
+        <linK rel="icon" type="image" href="../Images/Title logo.png">
+
+        <!--Linking external css-->
+        <link rel="stylesheet"  href="../CSS/style.css">
+        <!--Linking external js-->
+        <script src="../JavaScript/myscript.js"></script>
+
+
+        <!--Applying internal css-->
+        <style>
+/*Style for body*/
+body {
+    
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+  }
+
+
+
+
+
+
+/*Style for class body_part*/
+.body_part {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: relative; 
+    background: url('../Images/Products/Womens.jpg') no-repeat center center; 
+    background-size: cover; 
+    width: 100%; 
+    height: 500px; 
+    color: black; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 12px;
+    border-radius: 12px;
+}
+
+/*Style for class left*/
+.left{
+    position: relative;
+    left: 8vw;
+}
+
+/*Style for h1 elements of class left*/
+.left h1{
+    font-size: 48px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+/*Style for h4 elements of class left*/
+.left h4{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+/*Style for button element of class left*/
+.left button{
+    padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/*Style for class list_name*/
+.list_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+}
+
+/*Style for class Our_Products*/
+.Our_Products{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px;
+
+          }
+
+          /*Style for class watches*/
+          .watches{
+            border: 1px solid black;
+            padding: 26px;
+            margin:12px;
+            border-radius: 12px;
+            background-color:bisque;
+            border:none;
+          }
+
+          /*Style for anchor tags of class watches*/
+          .watches a{
+            color: black;
+          }
+
+          /*Style for img elements of class watches*/
+          .watches img{
+            width: 200px;
+            border-radius: 12px;
+          }
+
+          /*Style for class watches when hovering*/
+          .watches:hover{
+            background-color: #dab696;
+            cursor: pointer;
+          }
+
+          /*Style for class watch_name*/
+          .watch_name{
+            text-align: center;
+          }
+
+          /*Style for h2 elements of class watch_name*/
+          .watch_name h2{
+            color: black;
+          }
+
+          /*Style for h5 elements of class watch_name*/
+          .watch_name h5{
+            font-weight:550;
+            color: navy;
+          }
+
+          /*Style for class watch_price*/
+          .watch_price{
+            font-weight: bold;
+            text-align:center ;
+          }
+
+          /*Style for p elements of class watch_name*/
+          .watch_price p{
+            text-decoration: line-through;
+          }
+
+          /*Style for class watch_rating*/
+          .watch_rating{
+            text-align: center;
+          }
+
+          .filter ul{
+            list-style-type: none;
+            text-align: center;
+            margin: 20px;
+          }
+
+          .filter ul li{
+            display: inline;
+            margin: 0 5px;
+            line-height: 60px;
+          }
+
+          .filter ul li a{
+            color:black;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            border-radius: 50px;
+            border: 2px solid;
+
+          }
+
+          .filter ul li a.active{
+            background-color:bisque;
+          }
+
+          .filter ul li a:hover{
+            background-color: #dab696;
+          }
+
+          .watches_zoom  {
+            transition: transform 0.5s ease;
+          }
+          
+          .watches_zoom:hover {
+            transform: scale(1.1); /* This scales the image when hovered */
+}
+
+        </style>
+
+
+
+
+
+
+        
+    </head>
+    <!--End of Head -->
+
+    <!--Starting of Body Tag-->
+    <body>
+      <!--Starting of Header Tag-->
+        <header>
+          <!--Starting of Navigation Tag/ navigation bar-->
+           <nav>
+            <!--Website Logo-->
+            <div class="logo">
+              <a href="../Home.html"><img src="../Images/Nav Bar/Timeless Ticks.png" alt="TimeLess Ticks Logo" height="100%" ></a> 
+              </div>
+              
+              <!--Navigation Links/start of unordered list-->
+              <div class="Nav_Links">
+              <ul>
+                <!--Home page link-->
+                <li><a href="../Home.html">Home</a></li>
+
+                <!--Blog page link-->
+                <li><a href="../HTMl/Blogs.html">Blogs</a></li>
+
+                <!--Products page link-->
+                <li><a class="active" href="Products.html">Products</a></li>
+
+                <!--Research page link-->
+                <li><a href="../HTML/Research.html">Research</a></li>
+
+                <!--About Us page link-->
+                <li><a href="../HTML/About_Us.html">About Us</a></li>
+
+                <!--Contact link-->
+                <li><a href="../HTML/Contact.html">Contact</a></li>
+
+                <!--Search Bar-->
+                <li><input class="search" type="search" placeholder=" Search" onsearch="Search()" || ondblclick="Search()"></li> <!--calling function Search()-->
+
+                <!--Cart page icon/link-->
+                <li><a href="../HTML/Cart.html"><img src="../Images/Nav Bar/cart.png" width="20px" height="20px"></a></li>
+
+              </ul>
+              </div>
+              <!--End of unordered list-->
+            </nav>
+            <!--End of Navigation bar-->
+        </header>
+        <!--End of Header-->
+        
+
+        <div class="body_part">
+           
+        </div>
+
+
+
+
+  
+      <br><br>
+
+      <div  id="target" class="heading">
+        <div class="filter">
+            <ul>
+              <li><a href="./Products.html">All Products</a></li>
+            </ul>
+          </div>
+          <div class="filter">
+            <ul>
+              <li><a href="./Mens_Watches.html" >Men's</a></li>
+              <li><a href="./Womens_Watches.html" class="active">Women's</a></li>
+              <li><a href="./Smart_Watches.html">Smart</a></li>
+            </ul>
+          </div>
+         
+          <div class="Our_Products">
+            <div class="watches_zoom">
+              <div class="watches">
+                <a href="./Product Description/Watch1.html">
+                <div>
+                  <img src="../Images/Products/Watch 6.png" style="height: 200px;">
+                </div>
+                <div class="watch_name">
+                <h5>Cartier</h5>
+                <h2>Ballon Bleu</h2>
+                </div>
+                <div class="watch_rating">
+                ⭐⭐⭐⭐
+                </div>
+                <div class="watch_price">
+                  <p>$150</p>$130
+                </div>
+                </a>
+              </div>
+              </div>
+  
+              <div class="watches_zoom">
+              <div class="watches">
+                <a href="./Product Description/Watch1.html">
+                <div>
+                  <img src="../Images/Products/Watch 7.png">
+                </div>
+                <div class="watch_name">
+                <h5>Rolex</h5>
+                <h2>Day Date 36</h2>
+                </div>
+                <div class="watch_rating">
+                ⭐⭐⭐⭐⭐
+                </div>
+                <div class="watch_price">
+                  <p>$88000</p>$85000
+                </div>
+                </a>
+              </div>
+              </div>
+  
+              <div class="watches_zoom">
+              <div class="watches">
+                <a href="./Product Description/Watch1.html">
+                <div>
+                  <img src="../Images/Products/Watch 8.png">
+                </div>
+                <div class="watch_name">
+                <h5>Casio</h5>
+                <h2>LTP-V005D-4B2</h2>
+                </div>
+                <div class="watch_rating">
+                ⭐⭐⭐⭐
+                </div>
+                <div class="watch_price">
+                  <p>$120</p>$100
+                </div>
+                </a>
+              </div>
+              </div>
+  
+              <div class="watches_zoom">
+              <div class="watches">
+                <a href="./Product Description/Watch1.html">
+                <div>
+                  <img src="../Images/Products/Watch 9.png">
+                </div>
+                <div class="watch_name">
+                <h5>Titan</h5>
+                <h2>Raga Viva</h2>
+                </div>
+                <div class="watch_rating">
+                ⭐⭐⭐⭐
+                </div>
+                <div class="watch_price">
+                  <p>$500</p>$400
+                </div>
+                </a>
+              </div>
+              </div>
+  
+              <div class="watches_zoom">
+              <div class="watches">
+                <a href="./Product Description/Watch1.html">
+                <div>
+                  <img src="../Images/Products/Watch 10.png" style="height: 200px;">
+                </div>
+                <div class="watch_name">
+                <h5>Fossil</h5>
+                <h2>Virginia Two-Tone</h2>
+                </div>
+                <div class="watch_rating">
+                ⭐⭐⭐⭐
+                </div>
+                <div class="watch_price">
+                  <p>$180</p>$160
+                </div>
+                </a>
+              </div>
+              </div>
+  
+
+
+            
+  
+          </div>
+
+          
+
+
+
+
+        <!--Footer-->
+      <footer>
+        <div class="Footer"> 
+            <div class="Information_container">
+                <h4>INFORMATION</h4>
+                    <a href="../HTML/About_Us.html"><h6>About Us</h6></a>
+                    <a href="../HTML/Contact.html"><h6>Contact Us</h6></a>
+                    <a href="../HTML/Blogs.html"><h6>Blogs</h6></a>
+            </div>
+            <div class="Service_container">
+                <h4>OUR SERVICE</h4>
+                <div>
+                    <a href="./Our_Services.html"><h6>Privacy Policy</h6></a>
+                    <a href="./Our_Services.html"><h6>Terms of Sale</h6></a>
+                    <a href="./Our_Services.html"><h6>Return & Exchange</h6></a>
+                    <a href="./Our_Services.html"><h6>F.A.Q</h6></a>
+                </div>
+            </div>
+            <div class="newsletter_container">
+                <h3><u>Newsletter</u></h3>
+                <p>Subscribe to our newsletter to get the latest updates!!</p>
+                <div class="images_social_links">
+                  <a href="https://www.instagram.com/timelesstick.id/"><img src="../Images/Footer/Instagram.png" alt="instagram icon"></a>
+                  <a href="https://www.threads.net/@timelesstick.id?xmt=AQGzvCBod5lV5Sri75lRfDULNTR92J1pGOKe6MNzWrDUjTY"><img src="../Images/Footer/Threads.png" alt="thread icon"></a>
+              </div>
+          </div>
+           
+          <div class="Payment_container">
+              <h4>We accept online playment to:</h4>
+              <div class="images_payment">
+                  <img src="../Images/Footer/IME Pay.png" alt="IME pay logo">
+                  <img src="../Images/Footer/eSewa.png" alt="eSewa logo">
+                  <img src="../Images/Footer/Khalti.png" alt="khalti logo">
+              </div>
+          </div>
+      </div>
+  <!-- copy right-->
+  <div>
+    <hr>
+    <p style="text-align: center;">&copy; 2024 TimeLess Ticks. Every Tick Tells a Story. All Rights Reserved</p>
+</div>
+    </footer>
+      <!--End of Footer-->
+</body>
+</html>

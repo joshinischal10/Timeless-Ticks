@@ -1,0 +1,161 @@
+/*style for the entire page*/
+*{
+    margin: 0%;
+    border: 0%;
+    text-decoration: none;
+}
+
+/*Style for body*/
+body{
+    background-color: floralwhite;
+}
+
+/*Style for the entire nav bar*/
+nav{
+    display: flex;
+    background-color: #faebd7;
+    height: 90px;
+    width: 100%;
+    
+}
+
+/*Style for logo*/
+.logo{
+    flex:auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+/*Flex for nav links*/
+.Nav_Links{
+    flex:auto;
+}
+
+/*Style for the unordered list in the nav bar*/
+nav ul{
+    list-style-type: none;
+    float: right;
+    margin: 20px;
+}
+
+/*Style for the list items of the unordered list in the nav bar*/
+nav ul li{
+    display: inline;
+    margin: 0 5px;
+    line-height: 60px;   
+}
+
+/*Style for the anchor tags/links for the list items of the unordered list in the nav bar*/
+nav ul li a{
+    color:black;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: 500px;
+
+}
+
+/*Style for the current page in the nav bar*/
+a.active{
+    background-color: floralwhite;
+}
+
+/*Style for the anchor tags/links for the list items of the unordered list in the nav bar when hovering*/
+nav ul li a:hover{
+    background-color: #ffdfba;
+}
+
+/*Style for the search bar*/
+.search{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin: 0 3px;
+    font-size: 15px;
+    background-image:url('../Images/Nav Bar/search.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 162px 4px;
+
+}
+
+/*Removing the 'x' that appears in search bar when typing*/
+input[type="search"]::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+
+/*Style for footer*/
+/*Style for links in footer*/
+
+footer a{
+    font-size: 22px;
+    color:black;
+}
+
+/*Style for links in footer when hovering*/
+footer a:hover{
+    color:darkgrey;
+}
+
+/*Style for class footer*/
+.Footer {
+    justify-content: center;
+    background-color: #f7eee2;
+    display: flex; 
+    border-style:solid;
+    border-width: 1px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*Style for h3 elements in class newsletter_container*/
+.newsletter_container h3{
+
+    text-align: center;
+
+}
+
+/*Style for p elements in class newsletter_container*/
+.newsletter_container p{
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/*Style for images_social_links class*/
+.images_social_links{
+    display: flex;
+    justify-content: center;
+}
+
+/*Style for img elements in images_social_links class*/
+.images_social_links img{
+    margin: 5px;
+    height: 40px;
+    gap: 10px;
+}
+
+/*Style for h4 elements in payment_container class*/
+.Payment_container h4{
+    
+     text-align: center;
+
+}
+
+/*Style for images_payment class*/
+.images_payment { 
+    display: flex;
+    justify-content: center;
+}
+
+/*Style for img elements in images_payment class*/
+.images_payment  img{
+        margin: 5px;
+        height: 40px;
+        gap:10px;
+}

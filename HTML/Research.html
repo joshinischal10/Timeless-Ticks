@@ -1,0 +1,433 @@
+<!--Declaring HTML 5-->
+<!DOCTYPE html>
+<!--Starting of HTML Tag-->
+<html>
+  <!--Starting of Head Tag-->
+    <head>
+      <!--Title Tag-->
+        <title>TimeLess Ticks - Research</title>
+
+        <!--Meta Tags-->
+        <meta name="Author" content="Niraj Saud">
+        <meta name="AuthorID" content="NP01CP4A240170">
+        <meta name="Description" content="Research page of the website TimeLess Ticks">
+        <meta name="Keywords" content="TimeLess Ticks, Time, Watch, HTML, CSS, javascript">
+
+        <!--The icon for website present next to title-->
+        <linK rel="icon" type="image" href="../Images/Title logo.png">
+
+        <!--Linking external css-->
+        <link rel="stylesheet"  href="../CSS/style.css">
+
+        <!--Linking external js-->
+        <script src="../JavaScript/myscript.js"></script>
+
+        <!--Applying internal css-->
+        <style>
+        /*Styling for class title_bar*/
+          .title_bar{
+            margin-top: 20px;
+              margin-inline: 40%;
+              border-style: solid;
+              border-radius: 10px;
+              margin-bottom: 30px; 
+  
+          }
+
+          /*Styling for h1 elements of class title_bar*/
+          .title_bar h1{
+              font-weight: 100;
+              text-align: center;
+              
+          }
+          
+          /*Styling for class content_bar*/
+          .content_bar{
+              display: flex;
+              justify-content: space-between;
+              padding-inline: 5%;
+          }
+
+          /*Styling for class reference_page*/
+          .reference_page{
+              flex: 50%;
+              border-style: solid;
+              border-radius: 10px;
+              margin-right:20px; ;
+                           
+          }
+
+          /*Styling for img elements of class reference_page*/
+          .reference_page img {
+                  display: block;
+                  margin: 10px auto;
+                  width: 50%;
+              }
+
+
+         /*Styling for h4 elements of class sub_box*/
+          .sub_box h4{
+              
+                  text-align: center;
+                  border-style: solid;
+                  border-radius: 5px;
+                  width: 50%;
+                  margin-left: 25%;
+                  
+              }
+          
+              /*Styling for class Our_page*/
+          .Our_page{
+              flex: 50%;
+              border-style: solid;
+              border-radius: 10px;
+              margin-right:20px; ;
+              
+          }
+
+          /*Styling for img elements of class Our_page*/
+          .Our_page img {
+                  display: block;
+                  margin: 10px auto;
+                  width: 50%;
+              }
+
+         /*Styling for class paragraph_container*/
+          .paragraph_container{
+              padding: 20px;
+              margin-top: 40px;
+              border-style: solid;
+              border-radius: 10px;
+              margin-inline: 15%;
+          }
+
+          /*Styling for class table_container*/
+          .table_container{
+              justify-self: center;
+              width: 70%;
+              border-style:solid;
+              border-color: black;
+              border-radius: 10px;
+          }
+
+          /*Styling for th elements of table*/
+          th{
+              border: 10px;
+              width: 50%;
+              border:1px solid
+          }
+
+          /*Styling for img elements from th elements of table*/
+          th img{
+            padding: 20px;
+            width: 80%;
+            height: 80%;
+          }
+
+          /*Styling for anchor elements of p elements*/
+          p a{
+            color: maroon; 
+            text-decoration: underline;
+
+          }
+  
+      </style>
+        
+    </head>
+    <!--End of Head -->
+
+    <!--Starting of Body Tag-->
+    <body>
+      <!--Starting of Header Tag-->
+        <header>
+          <!--Starting of Navigation Tag/ navigation bar-->
+           <nav>
+            <!--Website Logo-->
+            <div class="logo">
+              <a href="../Home.html"><img src="../Images/Nav Bar/Timeless Ticks.png" alt="TimeLess Ticks Logo" height="100%" ></a> 
+              </div>
+              
+              <!--Navigation Links/start of unordered list-->
+              <div class="Nav_Links">
+              <ul>
+                <!--Home page link-->
+                <li><a href="../Home.html">Home</a></li>
+
+                <!--Blog page link-->
+                <li><a href="../HTML/Blogs.html">Blogs</a></li>
+
+                <!--Products page link-->
+                <li><a href="../HTML/Products.html">Products</a></li>
+
+                <!--Research page link-->
+                <li><a class="active" href="Research.html">Research</a></li>
+
+                <!--About Us page link-->
+                <li><a href="../HTML/About_Us.html">About Us</a></li>
+
+                <!--Contact link-->
+                <li><a href="../HTML/Contact.html">Contact</a></li>
+
+                <!--Search Bar-->
+                <li><input class="search" type="search" placeholder=" Search" onsearch="Search()" || ondblclick="Search()"></li> <!--calling function Search()-->
+
+                <!--Cart page icon/link-->
+                <li><a href="../HTML/Cart.html"><img src="../Images/Nav Bar/cart.png" width="20px" height="20px"></a></li>
+
+              </ul>
+              </div>
+              <!--End of unordered list-->
+            </nav>
+            <!--End of Navigation bar-->
+        </header>
+        <!--End of Header-->
+        <br>
+
+        <div class="title_bar">
+          <div class="title_text">
+          <h1>Navigation Bar</h1>
+          </div>
+      </div>
+      <table class="table_container">
+          <tr class="table_row">
+              <th>Reference page</th>
+              <th>Our page</th>
+          </tr>
+          <tr>
+              <th><a href="https://youtu.be/oLgtucwjVII"><img src="../Images/Research/Navbar reference.png" alt="Reference page image"></a></th>
+              <th><img src="../Images/Research/Navbar.png" alt="Our page image"></th>
+          </tr>
+      </table>
+      <div class="paragraph_container">
+          <p>The inspiration for the navigation bar was referenced from a youtube video by <a href="https://youtu.be/oLgtucwjVII">CodingNepal</a>. 
+            The use of in-line blocks and un-ordered lists to form the navigation bar was inspired from the video whereas the responsive element of the reference code was discarded. 
+            The uniquness can be seen in the styling of the navigation bar with the addition of a search bar and cart icon along with the horizontal layout of it. 
+         </p>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <div class="title_bar">
+        <div class="title_text">
+        <h1>Home</h1>
+        </div>
+    </div>
+    <table class="table_container">
+        <tr class="table_row">
+            <th>Reference page</th>
+            <th>Our page</th>
+        </tr>
+        <tr>
+            <th><a href="https://www.daraz.com.np/"><img src="../Images/Research/Home reference.png" alt="Reference page image"></a></th>
+            <th><img src="../Images/Research/Home.png" alt="Our page image"></th>
+        </tr>
+    </table>
+    <div class="paragraph_container">
+        <p>The inspiration for the home page was taken from <a href="https://www.daraz.com.np/">daraz</a>, the top e-commerce platform of Nepal. 
+            The banner element along with the product selection and image slider were taken as reference from daraz's homepage 
+            whereas the sub-banner was discarded.
+            The home page of timeless ticks shows various sections for other pages in the website which isn't present in the referenced webpage. 
+            This added functionality makes it easier for the users to get a overview and nagivate through the pages. 
+        </p>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="title_bar">
+      <div class="title_text">
+      <h1>Blog Article</h1>
+      </div>
+  </div>
+  <table class="table_container">
+      <tr class="table_row">
+          <th>Reference page</th>
+          <th>Our page</th>
+      </tr>
+      <tr>
+          <th><a href="https://www.vidyard.com/blog/future-of-ai-sales/"><img src="../Images/Research/Blog article reference.png" alt="Reference page image"></a></th>
+          <th><img src="../Images/Research/Blog article.png" alt="Our page image"></th>
+      </tr>
+  </table>
+  <div class="paragraph_container">
+    <p>The article pages for the website was inspired from <a href="https://www.vidyard.com/blog/future-of-ai-sales/"> Vidyard</a>. 
+      The use of image after heading and layout of the page was referenced from Vidyard.
+      Whereas, the sub title that explains what the blog is about along with the date below is unique to timeless ticks 
+      which helps is enhancing the user experince. 
+  </p>
+</div>
+  <br>
+  <hr>
+  <br>
+
+  <div class="title_bar">
+    <div class="title_text">
+    <h1>Newsletter</h1>
+    </div>
+</div>
+<table class="table_container">
+    <tr class="table_row">
+        <th>Reference page</th>
+        <th>Our page</th>
+    </tr>
+    <tr>
+        <th><a href="https://www.vidyard.com/blog/"><img src="../Images/Research/Blog newsletter reference.jpg" alt="Reference page image"></a></th>
+        <th><img src="../Images/Research/Blog newsletter.png" alt="Our page image"></th>
+    </tr>
+</table>
+<div class="paragraph_container">
+    <p>The subscribtion form that is featured in the blog page was also inspired by <a href="https://www.vidyard.com/blog/">Vidyard</a>. 
+        The idea to include a newsletter form was introduced from the Vidyard website but the diiference can be seen in the styling. </p>
+</div>
+<br>
+<hr>
+<br>
+  
+  <div class="title_bar">
+    <div class="title_text">
+    <h1>Blog</h1>
+    </div>
+</div>
+<table class="table_container">
+    <tr class="table_row">
+        <th>Reference page</th>
+        <th>Our page</th>
+    </tr>
+    <tr>
+        <th><a href="https://anywhereweroam.com/"><img src="../Images/Research/Blog layout references.jpg" alt="Reference page image"></a></th>
+        <th><img src="../Images/Research/Blog layout.png" alt="Our page image"></th>
+    </tr>
+</table>
+<div class="paragraph_container">
+    <p>The overall design and layout of the blog page was referenced from <a href="https://anywhereweroam.com/">Anywhere We Roam</a>. 
+        The website is itself made for blogs, which was taken as a reference for how a blog page should look like.
+        The similarities can be seen in the use of the banner, sections for blogs and top picks whereas
+        the differences are present in including a serach bar and newsletter subscribtion section 
+        which can only be found in different pages in the referenced website. 
+        This added feature of timeless ticks allows users to access everything blog related in the main blog page.
+    </p>
+</div>
+<br>
+<hr>
+<br>
+
+<div class="title_bar">
+    <div class="title_text">
+    <h1>Contact Form</h1>
+    </div>
+</div>
+<table class="table_container">
+    <tr class="table_row">
+        <th>Reference page</th>
+        <th>Our page</th>
+    </tr>
+    <tr>
+        <th><a href="https://www.naviforce-watch.com/contact-us/"><img src="../Images/Research/Contact reference 2.png" alt="Reference page image"></a></th>
+        <th><img src="../Images/Research/Contact form.png" alt="Our page image"></th>
+    </tr>
+</table>
+<div class="paragraph_container">
+    <p>The contact us form that is featured in contact page was referenced from <a href="https://www.naviforce-watch.com/contact-us/">Naviforce</a>, 
+        the top selling watch brand of Nepal. The uniqueness is present in the styling of the form. 
+    </p>
+</div>
+<br>
+<hr>
+<br>
+
+  <div class="title_bar">
+    <div class="title_text">
+    <h1>Contact</h1>
+    </div>
+</div>
+<table class="table_container">
+    <tr class="table_row">
+        <th>Reference page</th>
+        <th>Our page</th>
+    </tr>
+    <tr>
+        <th><a href="https://prideandpinion.com/pages/contact"><img src="../Images/Research/Contact reference 1.png" alt="Reference page image"></a></th>
+        <th><img src="../Images/Research/Contact.png"  alt="Our page image"></th>
+    </tr>
+</table>
+<div class="paragraph_container">
+    <p>The design and overall layout for the contact page of the website was referenced from <a href="https://prideandpinion.com/pages/contact">Pride and Pinion</a> 
+        including the Map and the Meet Us portion.
+        The distinctive features can be seen in the banner of timeless ticks and the refernce examples for entry fields 
+        of the form which makes it easier for the user to know the kind of data to enter.  
+    </p>
+</div>
+<br>
+<hr>
+<br>
+
+<div class="title_bar">
+  <div class="title_text">
+  <h1>Footer</h1>
+  </div>
+</div>
+<table class="table_container">
+  <tr class="table_row">
+      <th>Reference page</th>
+      <th>Our page</th>
+  </tr>
+  <tr>
+      <th><a href="https://www.naviforce-watch.com/"><img src="../Images/Research/Footer reference.png" alt="Reference page image"></a></th>
+      <th><img src="../Images/Research/Footer.png" alt="Our page image"></th>
+  </tr>
+</table>
+<div class="paragraph_container">
+    <p>The footer for the website was inspired by <a href="https://www.naviforce-watch.com/">Naviforce</a>. 
+      The Our Services, Information, Newsletter and Payment method part along with the design was inspired by the footer of Naviforce's website.</p>
+  </div>
+<br>
+<hr>
+<br>
+
+
+          <!--Footer-->
+        <footer>
+          <div class="Footer"> 
+            <div class="Information_container">
+                <h4>INFORMATION</h4>
+                    <a href="../HTML/About_Us.html"><h6>About Us</h6></a>
+                    <a href="../HTML/Contact.html"><h6>Contact Us</h6></a>
+                    <a href="../HTML/Blogs.html"><h6>Blogs</h6></a>
+            </div>
+            <div class="Service_container">
+                <h4>OUR SERVICE</h4>
+                <div>
+                    <a href="./Our_Services.html"><h6>Privacy Policy</h6></a>
+                    <a href="./Our_Services.html"><h6>Terms of Sale</h6></a>
+                    <a href="./Our_Services.html"><h6>Return & Exchange</h6></a>
+                    <a href="./Our_Services.html"><h6>F.A.Q</h6></a>
+                </div>
+            </div>
+            <div class="newsletter_container">
+                <h3><u>Newsletter</u></h3>
+                <p>Subscribe to our newsletter to get the latest updates!!</p>
+                <div class="images_social_links">
+                    <a href="https://www.instagram.com/timelesstick.id/"><img src="../Images/Footer/Instagram.png" alt="instagram icon"></a>
+                    <a href="https://www.threads.net/@timelesstick.id?xmt=AQGzvCBod5lV5Sri75lRfDULNTR92J1pGOKe6MNzWrDUjTY"><img src="../Images/Footer/Threads.png" alt="thread icon"></a>
+                </div>
+            </div>
+             
+            <div class="Payment_container">
+                <h4>We accept online playment to:</h4>
+                <div class="images_payment">
+                    <img src="../Images/Footer/IME Pay.png" alt="IME pay logo">
+                    <img src="../Images/Footer/eSewa.png" alt="eSewa logo">
+                    <img src="../Images/Footer/Khalti.png" alt="khalti logo">
+                </div>
+            </div>
+      </div>
+  <!-- copy right-->
+  <div>
+    <hr>
+    <p style="text-align: center;">&copy; 2024 TimeLess Ticks. Every Tick Tells a Story. All Rights Reserved</p>
+</div>
+  </footer>
+      <!--End of Footer-->
+</body>
+</html>

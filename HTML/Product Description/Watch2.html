@@ -1,0 +1,428 @@
+<!--Declaring HTML 5-->
+<!DOCTYPE html>
+<!--Starting of HTML Tag-->
+<html>
+  <!--Starting of Head Tag-->
+    <head>
+      <!--Title Tag-->
+        <title>TimeLess Ticks - Products</title>
+
+        <!--Meta Tags-->
+        <meta name="Author" content="Niraj Saud">
+        <meta name="AuthorID" content="NP01CP4A240170">
+        <meta name="Description" content="Product description page of the website TimeLess Ticks">
+        <meta name="Keywords" content="TimeLess Ticks, Time, Watch, HTML, CSS, javascript">
+
+        <!--The icon for website present next to title-->
+        <linK rel="icon" type="image" href="../../Images/Title logo.png">
+
+        <link rel="stylesheet" href="../../CSS/style.css">
+    
+        <script src="../../JavaScript/myscript.js"></script>
+
+        <style>
+          /* class for body*/
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:floralwhite;
+        }
+        /* class for container styling*/
+        .container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            margin-inline: 10%;
+            margin-bottom: 20px;
+        }
+        /* class for image container*/
+        .image_container{
+            flex: 50%;
+            /* image styling*/
+            img{ 
+                align-items: center;
+                margin: auto;
+                width: 80%;
+                height: 80%;
+            }  
+        }
+        /* class for Hedding container styling*/
+        .Hedding_container{
+            color: #000000;
+        }
+        /* class for watch specification on for list styling*/
+        .watch_specificatoin{
+            color: #676565;
+        }
+        /* class for specification container styling*/
+        .Specification_container{
+            margin-top: 30px;
+            color: #000000;
+            border: 1px solid #a09c9c;
+            border-radius: 10px;
+            padding: 20px;
+            margin-inline: 20%;
+            margin-bottom: 40px;
+        }
+        /* class for sub specification container styling*/
+        .Sub_Specification_container{
+            display: flex;
+            justify-content: space-between;
+            margin-inline: 30%;
+        }
+        /* class for sub specification technical container styling*/
+        .Sub_Specification_Technical_container{
+            display: flex;
+            justify-content: space-between;
+            margin-inline: 20%;
+            color: #676565;
+        }
+        .Adding_to_cart{
+            margin-top: 20px;
+            display: flex;
+    
+        }
+        .Quantity_selection{
+            label{
+                color: #000000;
+            }
+            input{
+                width: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #000000;
+            }
+        
+        }
+
+        .Add_to_cart_button{
+            margin-left: 40px;
+            button{
+                background-color: #000000;
+                color: #ffffff;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+
+        /* class for automatic watch views styling*/
+        .Watch_views{
+            color: #676565;
+            margin-left:265px;
+            font-size: 20px;
+        }
+        /* class for random number generator styling*/
+        .number{
+            font-size: 20px;
+            color: #000000;
+
+        }
+        /* class for review container styling*/
+        .review-container {
+            margin-left: 20%;
+            max-width: 600px;
+            padding: 20px;
+          }
+          
+            /* class for form detais styling*/
+          .form_details {
+            margin-top: 15px;
+          }
+          label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+          .form_details input, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          }
+          textarea {
+            resize: none;
+            height: 80px;
+          }
+            /* class for button styling*/
+          button {
+            margin-top: 30px;
+            background: #007bff;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          button:hover {
+            background: #000000;
+          }
+        /* class for specification container styling*/
+        .Specification_container{
+            margin-top: 30px;
+        }
+        /* class for specification container styling*/
+        .Inside_Specification_container{
+            margin-top: 30px;
+            color: #000000;
+            border: 1px solid #a09c9c;
+            border-radius: 10px;
+            padding: 20px;
+            margin-inline: 20%;
+            margin-bottom: 40px;
+        }
+        /* class for sub specification container styling*/
+        .Sub_Specification_container{
+            display: flex;
+            justify-content: space-between;
+            margin-inline: 30%;
+        }
+        /* class for sub specification technical container styling*/
+        .Sub_Specification_Technical_container{
+            display: flex;
+            justify-content: space-between;
+            margin-inline: 20%;
+            color: #676565;
+        }
+    
+         </style>
+        </head>
+
+        <body>
+            <!--Starting of Header Tag-->
+            <header>
+                <!--Starting of Navigation Tag/ navigation bar-->
+                 <nav>
+                  <!--Website Logo-->
+                  <div class="logo">
+                    <a href="../../Home.html"><img src="../../Images/Nav Bar/Timeless Ticks.png" alt="TimeLess Ticks Logo" height="100%" ></a> 
+                    </div>
+                    
+                    <!--Navigation Links/start of unordered list-->
+                    <div class="Nav_Links">
+                    <ul>
+                      <!--Home page link-->
+                      <li><a href="../../Home.html">Home</a></li>
+        
+                      <!--Blog page link-->
+                      <li><a href="../Blogs.html">Blogs</a></li>
+        
+                      <!--Products page link-->
+                      <li><a class="active" href="../Products.html">Products</a></li>
+        
+                      <!--Research page link-->
+                      <li><a href="../Research.html">Research</a></li>
+        
+                      <!--About Us page link-->
+                      <li><a href="../About_Us.html">About Us</a></li>
+        
+                      <!--Contact link-->
+                      <li><a href="../Contact.html">Contact</a></li>
+        
+                      <!--Search Bar-->
+                      <li><input class="search" type="search" placeholder=" Search" onsearch="Search()" || ondblclick="Search()"></li> <!--calling function Search()-->
+        
+                      <!--Cart page icon/link-->
+                      <li><a href="../Cart.html"><img src="../../Images/Nav Bar/cart.png" width="20px" height="20px"></a></li>
+        
+                    </ul>
+                    </div>
+                    <!--End of unordered list-->
+                  </nav>
+                  <!--End of Navigation bar-->
+              </header>
+              <!--End of Header-->
+
+
+                  <!--  container-->
+    <div class="container">
+        <!-- Image container-->
+        <div class="image_container">
+            <!-- image source-->
+            <img src="../../Images/Products/Watch 2.png" alt="Watch picture">
+        </div>
+        <!-- text container-->
+        <div class="text_container">
+            <!-- Hedding name container-->
+            <div class="Hedding_container">
+                <!-- Watch name-->
+                <h2>Primeline Daydate II</h2>
+                <hr><hr>
+                <br>
+            </div>
+            <!-- Watch specification container with list for first glance specification-->
+            <div class="watch_specificatoin">
+                <ul>
+                    <li>Brand: Roamer</li>
+                    <li>Model: Primeline Daydate II</li>
+                    <li>Dial Diameter: 42.0 mm</li>
+                    <li>Movement: Swiss Made Automatic SELLITA SW240-1</li>
+                    <li>Water Resistance: 05 ATM</li>
+                    <li>Warranty: 1 Year Warranty</li>
+                    <li>Delivery Service all over Nepal</li>
+                </ul>
+                <br>
+            </div> 
+            <div>
+                <!--Price of watch-->
+                <h3>$780</h3><h5 style="text-decoration: line-through;">$750</h5>
+            </div>
+            <div class="Adding_to_cart">
+            <div class="Quantity_selection">
+                <!--Quantity selection-->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="0">
+            </div>
+            <div class="Add_to_cart_button">
+                <!--Add to cart button-->
+                <button onclick="cart()">Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for views of the watch-->
+    <div class="Watch_views">
+        <div><h4><span class="number" id="views"> 1 </span>  People viewing this product right now!🔥</h4></div>
+    </div>
+    <br>
+
+    <!-- Container for addition information for the watch-->
+    <div>
+        <h2 style="text-align: center;">Specification</h2>
+        <hr>
+        <div class="Specification_container">
+            <div class="Sub_Specification_container">
+                <h5>Weight</h5>
+                <h6>0.1kg</h6>
+            </div>
+            <hr>
+            <div class="Sub_Specification_container">
+                <h5>Dimension</h5>
+                <h6>10 x 10 x 10 cm</h6>
+            </div>
+            <hr> 
+            <div class="Sub_Specification_container">
+                <h5>Brand</h5>
+                <h6>Roamer</h6>
+            </div>
+            <hr>
+            <br><br>
+            <!-- Container containing technical details for the watch -->
+            <div>
+                    <h3 style="text-align: center;">Technical Specification</h3>
+                    <br>
+                <div class="Sub_Specification_Technical_container">
+                    <h5>Movement</h5>
+                    <h6>Swiss Made Automatic SELLITA SW240-1</h6>
+                </div>
+                <hr>
+                <div class="Sub_Specification_Technical_container">
+                    <h5>Case Material</h5>
+                    <h6>Stainless Steel</h6>
+                </div>
+                <hr>
+                <div class="Sub_Specification_Technical_container">
+                    <h5>Clasp Type</h5>
+                    <h6>Butterfly Clasp (push button)</h6>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+
+    
+    <hr>
+        <!-- Container for review-->
+        <div class="review-container">
+            <form id="review-form" onsubmit="ValidateForm()">
+                        
+                <!-- form details input-->
+                <div class="form_details">
+                    <label>Your Review</label>
+                    <textarea placeholder="Write your review here..." required></textarea>
+                </div>
+                <!-- form details input-->
+                <div class="form_details">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <br><br>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <!-- details submit button-->
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="Footer"> 
+          <div class="Information_container">
+              <h4>INFORMATION</h4>
+                  <a href="../About_Us.html"><h6>About Us</h6></a>
+                  <a href="../Contact.html"><h6>Contact Us</h6></a>
+                  <a href="../Blogs.html"><h6>Blogs</h6></a>
+          </div>
+          <div class="Service_container">
+              <h4>OUR SERVICE</h4>
+              <div>
+                  <a href="../Our_Services.html"><h6>Privacy Policy</h6></a>
+                  <a href="../Our_Services.html"><h6>Terms of Sale</h6></a>
+                  <a href="../Our_Services.html"><h6>Return & Exchange</h6></a>
+                  <a href="../Our_Services.html"><h6>F.A.Q</h6></a>
+              </div>
+          </div>
+          <div class="newsletter_container">
+              <h3><u>Newsletter</u></h3>
+              <p>Subscribe to our newsletter to get the latest updates!!</p>
+              <div class="images_social_links">
+                  <a href="https://www.instagram.com/timelesstick.id/"><img src="../../Images/Footer/Instagram.png" alt="instagram icon"></a>
+                  <a href="https://www.threads.net/@timelesstick.id?xmt=AQGzvCBod5lV5Sri75lRfDULNTR92J1pGOKe6MNzWrDUjTY"><img src="../../Images/Footer/Threads.png" alt="thread icon"></a>
+              </div>
+          </div>
+           
+          <div class="Payment_container">
+              <h4>We accept online playment to:</h4>
+              <div class="images_payment">
+                  <img src="../../Images/Footer/IME Pay.png" alt="IME pay logo">
+                  <img src="../../Images/Footer/eSewa.png" alt="eSewa logo">
+                  <img src="../../Images/Footer/Khalti.png" alt="khalti logo">
+              </div>
+          </div>
+        </div>
+<!-- copy right-->
+<div>
+    <hr>
+    <p style="text-align: center;">&copy; 2024 TimeLess Ticks. Every Tick Tells a Story. All Rights Reserved</p>
+</div>
+    </footer>
+    <!--End of Footer-->
+
+    <script>
+        function cart(){
+            alert("Item out of stock!")
+            alert("Can't add item to cart")
+        }
+
+         // Function to generate random number for views
+         function generateNumber() {
+            const number = Math.floor(Math.random() * (11)); // Generates a random number from 0 to 10
+            document.getElementById("views").textContent = number;
+          }
+      
+          // Start the generator immediately
+          setInterval(generateNumber, 3000);
+
+        
+        //Function to validate form
+        function ValidateForm(){
+                        alert("Thank you for the review!")
+                    }
+    </script>
+</body>
+</html>

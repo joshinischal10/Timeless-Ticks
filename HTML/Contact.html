@@ -1,0 +1,256 @@
+<!--Declaring HTML 5-->
+<!DOCTYPE html>
+<!--Starting of HTML Tag-->
+<html>
+  <!--Starting of Head Tag-->
+    <head>
+      <!--Title Tag-->
+        <title>TimeLess Ticks - Contact</title>
+
+        <!--Meta Tags-->
+        <meta name="Author" content="Niraj Saud">
+        <meta name="AuthorID" content="NP01CP4A240170">
+        <meta name="Description" content="Contact page of the website TimeLess Ticks">
+        <meta name="Keywords" content="TimeLess Ticks, Time, Watch, HTML, CSS, javascript">
+
+        <!--The icon for website present next to title-->
+        <linK rel="icon" type="image" href="../Images/Title logo.png">
+
+        <!--Linking external css-->
+        <link rel="stylesheet"  href="../CSS/style.css">
+
+        <script src="../JavaScript/myscript.js"></script>
+        <style>
+          .Contact_Us_container{
+              align-content: center;
+              margin-top: 0px;
+              margin-bottom: 10px;
+              height: 300px;
+              width: 100%;
+              background-image: url('../Images/Contact us/Contact us.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+          .Contact_Us_text{
+              text-align: center;
+              font-size: 25px;
+              background-color: transparent;
+              
+          }
+          .Contact_Us_text h2{
+              font-weight: bold;
+              font-weight: 100;
+              background-color:white;
+              display:inline-block;
+              padding: 5px;
+              border-radius: 10px;  
+          }
+          .container {
+              margin-top: 50px;
+              display: flex;
+              justify-content: space-between;
+              padding: 20px;
+          }
+          
+          .form_container {
+              padding: 10px;
+              width: 30%;
+              padding-right: 20px;
+          }
+          .form_container h2{
+              text-align: center;
+          }
+          .form_container input {
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+          }
+          .form_container textarea {
+              width: 100%;
+              padding: 10px;
+              margin: 10px 0;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+          }
+          
+          
+          .form_container input[type="submit"] {
+              background: navy;
+              color: white;
+              cursor:pointer;
+          }
+          
+          .map_container iframe {
+              height: 350px;
+              width: 350px;
+              cursor: grab;
+              padding-left: 10px;
+          }
+          
+          .message_container {
+              width: 30%;
+              height: 60%;
+              text-align: left;
+          }
+          .text{
+              font-size: large;
+              text-align: center;
+          }
+      </style>
+        
+    </head>
+    <!--End of Head -->
+
+    <!--Starting of Body Tag-->
+    <body>
+      <!--Starting of Header Tag-->
+        <header>
+          <!--Starting of Navigation Tag/ navigation bar-->
+           <nav>
+            <!--Website Logo-->
+            <div class="logo">
+              <a href="../Home.html"><img src="../Images/Nav Bar/Timeless Ticks.png" alt="TimeLess Ticks Logo" height="100%" ></a> 
+              </div>
+              
+              <!--Navigation Links/start of unordered list-->
+              <div class="Nav_Links">
+              <ul>
+                <!--Home page link-->
+                <li><a href="../Home.html">Home</a></li>
+
+                <!--Blog page link-->
+                <li><a href="../HTMl/Blogs.html">Blogs</a></li>
+
+                <!--Products page link-->
+                <li><a href="../HTML/Products.html">Products</a></li>
+
+                <!--Research page link-->
+                <li><a href="../HTML/Research.html">Research</a></li>
+
+                <!--About Us page link-->
+                <li><a href="../HTML/About_Us.html">About Us</a></li>
+
+                <!--Contact link-->
+                <li><a class="active" href="Contact.html">Contact</a></li>
+
+                <!--Search Bar-->
+                <li><input class="search" type="search" placeholder=" Search" onsearch="Search()" || ondblclick="Search()"></li> <!--calling function Search()-->
+
+                <!--Cart page icon/link-->
+                <li><a href="../HTML/Cart.html"><img src="../Images/Nav Bar/cart.png" width="20px" height="20px"></a></li>
+
+              </ul>
+              </div>
+              <!--End of unordered list-->
+            </nav>
+            <!--End of Navigation bar-->
+        </header>
+        <!--End of Header-->
+
+
+        <!--Start of contact body-->
+      <!--container for the banner image with contact us text on top-->
+    <div class="Contact_Us_container">
+      <div class="Contact_Us_text">
+          <h2>CONTACT US</h2>
+      </div>
+  </div>
+  <!--container for map location image  , form and meet us information-->
+  <div class="container">
+      <!--map location-->
+      <div class="map_container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3118401898123!2d85.32523640000002!3d27.707656500000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1736590043242!5m2!1sen!2snp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!--text container for meet us information-->
+      <div class="message_container">
+          <div class="text"><h2>Meet Us</h2>
+              <p>
+                  +977-9869357800<br>
+                  nirajsaud96@gmail.com
+              </p>
+              <br>
+              <h5>Opening Hours</h5>
+              <p>Sunday: Appointment Only<br>Monday - Friday : 9:00 AM - 5:00 PM<br>Saturday: Closed</p>
+          </div>
+      </div>
+      <!--container for form-->
+      
+      <form class="form_container" onsubmit="ValidateForm()"> <!--Calling the function ValidateForm() when the form is submitted-->
+          <!--name input-->
+          <h2>Contact</h2>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" placeholder="Niraj Saud" required>
+          <!--Email input-->
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="NirajS@example.com" required>
+          <!--phone number input-->
+          <label for="number">Phone Number:</label>
+          <input type="tel" id="number" placeholder="1234567890" required>
+          <!--optional message input -->
+          <label for="message">Your Message (Optional):</label>
+          <textarea id="message" placeholder="Write your message here..."></textarea>
+          <!--submit button-->
+          <input type="submit" value="Send">
+      </form>
+      <!--End of form-->
+  </div>
+  <!--End of contact body-->
+
+
+
+
+
+        <!--Footer-->
+      <footer>
+        <div class="Footer"> 
+            <div class="Information_container">
+                <h4>INFORMATION</h4>
+                    <a href="../HTML/About_Us.html"><h6>About Us</h6></a>
+                    <a href="../HTML/Contact.html"><h6>Contact Us</h6></a>
+                    <a href="../HTML/Blogs.html"><h6>Blogs</h6></a>
+            </div>
+            <div class="Service_container">
+                <h4>OUR SERVICE</h4>
+                <div>
+                    <a href="./Our_Services.html"><h6>Privacy Policy</h6></a>
+                    <a href="./Our_Services.html"><h6>Terms of Sale</h6></a>
+                    <a href="./Our_Services.html"><h6>Return & Exchange</h6></a>
+                    <a href="./Our_Services.html"><h6>F.A.Q</h6></a>
+                </div>
+            </div>
+            <div class="newsletter_container">
+                <h3><u>Newsletter</u></h3>
+                <p>Subscribe to our newsletter to get the latest updates!!</p>
+                <div class="images_social_links">
+                    <a href="https://www.instagram.com/timelesstick.id/"><img src="../Images/Footer/Instagram.png" alt="instagram icon"></a>
+                    <a href="https://www.threads.net/@timelesstick.id?xmt=AQGzvCBod5lV5Sri75lRfDULNTR92J1pGOKe6MNzWrDUjTY"><img src="../Images/Footer/Threads.png" alt="thread icon"></a>
+                </div>
+            </div>
+             
+            <div class="Payment_container">
+                <h4>We accept online playment to:</h4>
+                <div class="images_payment">
+                    <img src="../Images/Footer/IME Pay.png" alt="IME pay logo">
+                    <img src="../Images/Footer/eSewa.png" alt="eSewa logo">
+                    <img src="../Images/Footer/Khalti.png" alt="khalti logo">
+                </div>
+            </div>
+      </div>
+  <!-- copy right-->
+  <div>
+    <hr>
+    <p style="text-align: center;">&copy; 2024 TimeLess Ticks. Every Tick Tells a Story. All Rights Reserved</p>
+</div>
+  </footer>
+      <!--End of Footer-->
+
+    <!--JavaScript implications-->
+      <script>
+        function ValidateForm(){ //calls function ValidateForm() that shows an alert when called
+          alert("Thank you! You will be contacted soon!")
+        }
+      </script>
+</body>
+</html>

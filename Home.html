@@ -1,0 +1,535 @@
+<!--Declaring HTML 5-->
+<!DOCTYPE html>
+<!--Starting of HTML Tag-->
+<html>
+  <!--Starting of Head Tag-->
+    <head>
+      <!--Title Tag-->
+        <title>TimeLess Ticks - Home</title>
+
+        <!--Meta Tags-->
+        <meta name="Author" content="Nischal Raj Joshi">
+        <meta name="AuthorID" content="NP01CP4A240168">
+        <meta name="Description" content="Home page of the website TimeLess Ticks">
+        <meta name="Keywords" content="TimeLess Ticks, Time, Watch, HTML, CSS, javascript">
+
+        <!--The icon for website present next to title-->
+        <linK rel="icon" type="image" href="./Images/Title logo.png">
+
+        <!--Linking external css-->
+        <link rel="stylesheet"  href="./CSS/style.css">
+
+        <!--Linking external JavaScript-->
+        <script src="./JavaScript/myscript.js"></script>
+
+        <!--Internal CSS-->
+        <style>
+          /*Style for image banner*/
+          .banner img{
+            width: 100%;
+            height: 100%;
+          }
+
+          /*Style for top picks section*/
+          .Top_Picks{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px;
+
+          }
+
+          /*Style for watches*/
+          .watches{
+            border: 1px solid black;
+            padding: 26px;
+            margin:12px;
+            border-radius: 12px;
+            background-color:bisque;
+            border:none;
+          }
+
+          .watches a{
+            color: black;
+          }
+
+          .watches img{
+            width: 200px;
+            border-radius: 12px;
+          }
+
+          .watches:hover{
+            background-color: #dab696;
+            cursor: pointer;
+          }
+
+          .watch_name{
+            text-align: center;
+          }
+
+          .watch_name h2{
+            color: black;
+          }
+
+          .watch_name h5{
+            font-weight:550;
+            color: navy;
+          }
+
+          .watch_price{
+            font-weight: bold;
+            text-align:center ;
+          }
+
+          .watch_price p{
+            text-decoration: line-through;
+          }
+
+          .watch_rating{
+            text-align: center;
+          }
+
+          .Explore{
+            text-align: center;            
+          }
+
+          .Explore button{
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+          }
+
+          .Explore a{
+            color: black;
+          }
+
+          .overview{
+          
+            display: flex;
+          }
+
+          .blog{
+            flex: 60%;
+            width: 60%;
+            margin: 5px;
+            
+            
+          }
+
+          .contact{
+            width: 28%;
+                        
+            
+            margin: 5px;
+            
+          }
+
+          .card{
+            padding:20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #faebd7;
+            width: 95%;
+            border: 1px solid black;
+          }
+
+        .card a{
+            color: maroon;
+         }
+
+
+        .card a:hover{
+            color:crimson;
+         }
+
+         .message_container {
+          border: 1px solid ;
+              width: 100%;
+              text-align: left;
+              background-color:#faebd7;
+              height: 300px;
+
+          }
+
+          .text{
+              font-size: large;
+              text-align: center;
+          }
+
+          .message_container a{
+            color: maroon;
+          }
+
+          .message_container a:hover{
+            color: crimson;
+          }
+
+          .research{
+            text-align: center;
+            border: 1px solid black;
+            font-size: 21px;
+            background-color: #faebd7;
+          }
+
+          .research a{
+            color: maroon
+          }
+
+          .research a:hover{
+            color: crimson;
+          }
+
+          .watches_zoom  {
+            transition: transform 0.5s ease;
+          }
+          
+          .watches_zoom:hover {
+            transform: scale(1.1); /* This scales the image when hovered */
+}
+
+.About{
+            padding:20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #faebd7;
+            width: 96.5%;
+            border: 1px solid black;
+            
+            text-align: center;
+          }
+
+        .About a{
+            color: maroon;
+         }
+
+
+        .About a:hover{
+            color:crimson;
+         }
+
+         .About a h3{
+            color:black;
+         }
+         .About a h3:hover{
+            color:maroon;
+         }
+        </style>
+        
+    </head>
+    <!--End of Head -->
+
+    <!--Starting of Body Tag-->
+    <body>
+      <!--Starting of Header Tag-->
+        <header>
+          <!--Starting of Navigation Tag/ navigation bar-->
+           <nav>
+            <!--Website Logo-->
+            <div class="logo">
+              <a href="Home.html"><img src="./Images//Nav Bar/Timeless Ticks.png" alt="TimeLess Ticks Logo" height="100%" ></a> 
+              </div>
+              
+              <!--Navigation Links/start of unordered list-->
+              <div class="Nav_Links">
+              <ul>
+                <!--Home page link-->
+                <li><a class="active" href="Home.html">Home</a></li>
+
+                <!--Blog page link-->
+                <li><a href="./HTMl/Blogs.html">Blogs</a></li>
+
+                <!--Products page link-->
+                <li><a href="./HTML/Products.html">Products</a></li>
+
+                <!--Research page link-->
+                <li><a href="./HTML/Research.html">Research</a></li>
+
+                <!--About Us page link-->
+                <li><a href="./HTML/About_Us.html">About Us</a></li>
+
+                <!--Contact link-->
+                <li><a href="./HTML/Contact.html">Contact</a></li>
+
+                <!--Search Bar-->
+                <li><input class="search" type="search" placeholder=" Search" onsearch="Search()" || ondblclick="Search()"></li> <!--calling function Search()-->
+
+                <!--Cart page icon/link-->
+                <li><a href="./HTML/Cart.html"><img src="./Images//Nav Bar/cart.png" width="20px" height="20px"></a></li>
+
+              </ul>
+              </div>
+              <!--End of unordered list-->
+            </nav>
+            <!--End of Navigation bar-->
+        </header>
+        <!--End of Header-->
+        
+        <!--Start of Section for banners-->
+        <section>
+          <div class="banner">
+            <div id="slider">
+               <a href="./HTML/Products.html">
+                <img src="./Images/Home/Main.jpg" alt="main banner">          
+              </a> 
+            </div>
+          </div>
+        </section>
+
+        <script>
+          var images = ['./Images/Home/Mens.jpg', './Images/Home/Womens.jpg', './Images/Home/Smart.jpg', './Images/Home/Main.jpg'];
+      
+          var x = 0;
+          var imgElement = document.querySelector('#slider img');
+          //The setInterval() calls a function at theintervals (in milliseconds). 
+          function slider() {
+      
+            x = (x + 1) % images.length; // Increment index and loop back to 0 when it exceeds length
+            imgElement.src = images[x];
+          }
+
+          // Call slider function every 5 seconds
+          setInterval(slider, 5000);
+
+          </script>
+
+
+          
+
+        <hr>
+
+        <!--End of section for banner-->
+
+        
+        <br><br>
+
+        <!--Start of Top Picks-->
+        <h1 style="justify-self: center; font-size: 40px;">Top Picks</h1>
+
+        <!--Start of division for top picks-->
+        <div class="Top_Picks">
+
+          <!--Division for watch 1 in top picks-->
+          <div class="watches_zoom">
+          <div class="watches">
+            <a href="./HTML/Product Description/Watch1.html">
+            <div>
+              <img src="./Images/Products/Watch 1.png">
+            </div>
+            <div class="watch_name">
+            <h5>Naviforce</h5>
+            <h2>NFS 1003 Auto</h2>
+            </div>
+            <div class="watch_rating">
+            ⭐⭐⭐⭐
+            </div>
+            <div class="watch_price">
+              <p>$180</p>$150
+            </div>
+            </a>
+          </div>
+          </div>
+
+          <!--Division for watch 2 in top picks-->
+          <div class="watches_zoom">
+          <div class="watches">
+            <a href="./HTML/Product Description/Watch2.html">
+            <div>
+              <img src="./Images/Products/Watch 4.png">
+            </div>
+            <div class="watch_name">
+            <h5>Rolex</h5>
+            <h2>Sky-Dweller</h2>
+            </div>
+            <div class="watch_rating">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <div class="watch_price">
+              <p>$8000</p>$7800
+            </div>
+            </a>
+          </div>
+          </div>
+
+          <!--Division for watch 3 in top picks-->
+          <div class="watches_zoom">
+          <div class="watches">
+            <a href="./HTML/Product Description/Watch1.html">
+            <div>
+              <img src="./Images/Products/Watch 6.png" style="height: 200px;">
+            </div>
+            <div class="watch_name">
+            <h5>Cartier</h5>
+            <h2>Ballon Bleu</h2>
+            </div>
+            <div class="watch_rating">
+            ⭐⭐⭐⭐
+            </div>
+            <div class="watch_price">
+              <p>$150</p>$130
+            </div>
+            </a>
+          </div>
+          </div>
+
+          <!--Division for watch 4 in top picks-->
+          <div class="watches_zoom">
+          <div class="watches">
+            <a href="./HTML/Product Description/Watch1.html">
+            <div>
+              <img src="./Images/Products/Watch 10.png" style="height: 200px;">
+            </div>
+            <div class="watch_name">
+            <h5>Fossil</h5>
+            <h2>Virginia Two-Tone</h2>
+            </div>
+            <div class="watch_rating">
+            ⭐⭐⭐⭐
+            </div>
+            <div class="watch_price">
+              <p>$180</p>$160
+            </div>
+            </a>
+          </div>
+          </div>
+
+          <!--Division for watch 5 in top picks-->
+          <div class="watches_zoom">
+          <div class="watches">
+            <a href="./HTML/Product Description/Watch1.html">
+            <div>
+              <img src="./Images/Products/Watch 11.png" style="height: 200px;">
+            </div>
+            <div class="watch_name">
+            <h5>Samsung</h5>
+            <h2>Watch 7</h2>
+            </div>
+            <div class="watch_rating">
+            ⭐⭐⭐⭐⭐
+            </div>
+            <div class="watch_price">
+              <p>$250</p>$230 
+            </div>
+            </a>
+          </div>
+          </div>
+
+        </div>
+
+        <!--End of Top Picks-->
+
+        <br>
+
+        <!--View More Button that links to Products Page-->
+        <div class="Explore"> 
+          <a href="./HTML/Products.html"><button>View More</button></a>
+        </div>
+        <br><br><hr><br><br>
+
+        <!--Overview of other pages-->
+      <div class="overview">
+        <div class="blog">
+          <h2> <span style="color:#391e10; background-color: #ffe4c4; padding: 5px; border-radius: 5px; font-size: 30px; border: 1px solid; margin: 0 40%;"> Featured Blog </span> </h2>
+          <div class="card">
+            <h1> Timeless Innovations</h1>
+                  <br>
+                  <a href="./HTML/Blogs/Blog1.html">
+                  <h2>Learn how technology is reshaping the watch industry, <i>Jan 2025 </i> </h2>
+                  <img src="./Images/Blogs/Blogs Banner (1).png" alt="watch banner" style="width:95%; height: 250px; padding:20px;"> 
+                  </a>  
+          </div>
+        </div>
+      <div class="contact">
+        <br><br><br>
+          <div class="message_container">
+            <br><br><br>
+            <a href="./HTML/Contact.html">
+            <div class="text"><h2>Meet Us</h2>
+              <p style="color: black;">
+                  +977-9869357800
+                  <br>
+                  nirajsaud96@gmail.com
+              </p>
+              <br>
+              <h4>Opening Hours</h4>
+              <p style="color: black;">Sunday: Appointment Only<br>Monday - Friday : 9:00 AM - 5:00 PM<br>Saturday: Closed</p>
+            </div>
+            </a>
+          </div>
+          <br>
+          <div class="research">
+          <a href="./HTML/Research.html">
+          <div>
+            <h1>Learn what makes us unique!</h1>
+          </div>
+          </a>
+          </div>
+      </div>
+    </div>
+    
+    
+    <div class="About">
+      <a href="./HTML/About_Us.html">
+       <h2>"At <b>TimeLess Ticks</b>, we celebrate the artistry and precison of fine watchmaking.
+        We specialize in offering premium watches that combines cutting-edge technology with
+        timeless designs."
+        </h2>
+        <br>
+        <h3>Learn more about the team behind TimeLess Ticks!</h3>
+      </a>
+      
+    </div>
+
+      <br><br>
+      <!-- Start of Footer-->
+      <footer>
+        <div class="Footer"> 
+          <div class="Information_container">
+              <h4>INFORMATION</h4>
+                  <a href="./HTML/About_Us.html"><h6>About Us</h6></a> <!--Internal Link to About us page-->
+                  <a href="./HTML/Contact.html"><h6>Contact Us</h6></a> <!--Internal Link to Contact page-->
+                  <a href="./HTML/Blogs.html"><h6>Blogs</h6></a> <!--Internal Link to Blog page-->
+          </div>
+          <div class="Service_container">
+              <h4>OUR SERVICE</h4>
+              <div>
+                  <a href="./HTML/Our_Services.html"><h6>Privacy Policy</h6></a>  <!--Internal Link to Our Services page-->
+                  <a href="./HTML/Our_Services.html"><h6>Terms of Sale</h6></a> <!--Internal Link to Our Services page-->
+                  <a href="./HTML/Our_Services.html"><h6>Return & Exchange</h6></a> <!--Internal Link to Our Services page-->
+                  <a href="./HTML/Our_Services.html"><h6>F.A.Q</h6></a> <!--Internal Link to Our Services page-->
+              </div>
+          </div>
+          <div class="newsletter_container">
+              <h3><u>Newsletter</u></h3>
+              <p>Subscribe to our newsletter to get the latest updates!!</p>
+              <div class="images_social_links">
+                  <a href="https://www.instagram.com/timelesstick.id/"><img src="./Images/Footer/Instagram.png" alt="instagram icon"></a> <!--External Link for Instagram page-->
+                  <a href="https://www.threads.net/@timelesstick.id?xmt=AQGzvCBod5lV5Sri75lRfDULNTR92J1pGOKe6MNzWrDUjTY"><img src="./Images/Footer/Threads.png" alt="thread icon"></a> <!--Enternal Link for Threads page-->
+              </div>
+          </div>
+           
+          <div class="Payment_container">
+              <h4>We accept online playment to:</h4>
+              <div class="images_payment">
+                  <img src="./Images/Footer/IME Pay.png" alt="IME pay logo">
+                  <img src="./Images/Footer/eSewa.png" alt="eSewa logo">
+                  <img src="./Images/Footer/Khalti.png" alt="khalti logo">
+              </div>
+          </div>
+        </div>
+         <!-- copy right-->
+    <div>
+      <hr>
+      <p style="text-align: center;">&copy; 2024 TimeLess Ticks. Every Tick Tells a Story. All Rights Reserved</p>
+  </div>
+
+      </footer>
+
+    <!--End of Footer-->    
+    </body>
+    <!--End Of Body-->
+</html>
+<!--End Of HTML-->
